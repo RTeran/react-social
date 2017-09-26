@@ -141,3 +141,7 @@ test("TumblrButton", function (t) {
 test("PocketButton", function (t) {
   t.plan(testButton(t, "TumblrButton"));
 });
+
+test("ScoopItButton", function (t) {
+  t.plan(testButton(t, "ScoopItButton"));
+});
