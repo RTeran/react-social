@@ -608,5 +608,15 @@
     }
   });
 
+  exports.ScoopItButton = createClass({
+    displayName: 'ScoopItButton'
+
+    , mixins: [Button, DefaultBlankTarget]
+
+    , constructUrl: function() {
+      return "https://www.scoop.it/bookmarklet?url=" + encodeURIComponent(this.props.url)
+    }
+  });
+
   return exports;
 });

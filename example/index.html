@@ -32,6 +32,12 @@
     div#app a {
         margin-right:5px;
     }
+    .scoop-it-icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url('http://www.scoop.it/resources/img/V4/presscoverage/logo/it_24.png')
+    }
 </style>
 <script type="text/babel">
 
@@ -45,6 +51,7 @@
     var TumblrButton = ReactSocial.TumblrButton;
     var XingButton = ReactSocial.XingButton;
     var EmailButton = ReactSocial.EmailButton;
+    var ScoopItButton = ReactSocial.ScoopItButton;
 
     var App = React.createClass({
         render: function () {
@@ -82,6 +89,9 @@
                 <TumblrButton title="Share via Tumblr" message={message} url={link} element="a" className="">
                     <i className="fa fa-tumblr"/>
                 </TumblrButton>
+                <ScoopItButton title="Share via Tumblr" message={message} url={link} element="a" className="">
+                    <i className="scoop-it-icon" />
+                </ScoopItButton>
             </div>
             );
         }
